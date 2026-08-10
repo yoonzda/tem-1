@@ -1,19 +1,18 @@
 body{background-color: #999;}
 
+/* header start */
 header{
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding-block: 28px;
-  padding-inline: 8%;
+  width: 100%;
+  position: fixed;
+  left: 0; top: 0;
+  box-sizing: border-box;
 }
 header{
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-}
-header h1{
-  width: 20%;
-  max-width: 280px;
 }
 header h1 a{
   display: block;
@@ -30,21 +29,64 @@ header nav ul li{font-family: 'Pretendard'; font-size: 20px; font-weight: 500; c
 header button{
   border: none;
   background-color: transparent;
+  padding: 0;
   cursor: pointer;
 }
-header div.menuPanel:not(.active){
+header button.material-symbols-outlined{font-size: 40px;}
+header #menuPanel:not(.active){
   display: none;
 }
+header #menuPanel{
+  background-color: tomato;
+
+  width: 80%;
+  height: 100dvh;
+  position: fixed;
+  right: 0; top: 0;
+}
+/* header end */
+
+/* section 01 start */
 
 @media screen and (max-width: 767px){
+  /* header start */
   header{background-color: tan;}
+  header{
+    padding-block: 16px;
+    padding-inline: 4%;
+  }
+  header h1{
+    width: 50%;
+    max-width: 280px;
+  }
   header nav{display: none;}
+  /* header end */
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
+  /* header start */
   header{background-color: teal;}
+  header{
+    padding-block: 20px;
+    padding-inline: 4%;
+  }
+  header h1{
+    width: 30%;
+    max-width: 280px;
+  }
   header nav{display: none;}
+  /* header end */
 }
 @media screen and (min-width: 1280px){
-  header{background-color: tomato;}
+  /* header start */
+  header{background-color: transparent;}
+  header{
+    padding-block: 28px;
+    padding-inline: 8%;
+  }
+  header h1{
+    width: 20%;
+    max-width: 280px;
+  }
   header .mui{display: none;}
+  /* header end */
 }
