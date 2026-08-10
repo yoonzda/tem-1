@@ -1,0 +1,50 @@
+body{background-color: #999;}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-block: 28px;
+  padding-inline: 8%;
+}
+header{
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+header h1{
+  width: 20%;
+  max-width: 280px;
+}
+header h1 a{
+  display: block;
+}
+header h1 a img{
+  width: 100%;
+  display: block;
+}
+header nav ul{
+  display: flex;
+  gap: 48px;
+}
+header nav ul li{font-family: 'Pretendard'; font-size: 20px; font-weight: 500; color: #FFF;}
+header button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+header div.menuPanel:not(.active){
+  display: none;
+}
+
+@media screen and (max-width: 767px){
+  header{background-color: tan;}
+  header nav{display: none;}
+}
+@media screen and (min-width: 768px) and (max-width: 1279px){
+  header{background-color: teal;}
+  header nav{display: none;}
+}
+@media screen and (min-width: 1280px){
+  header{background-color: tomato;}
+  header .mui{display: none;}
+}
