@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>서울마음치과</title>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/core.js"></script>
   <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
-   <header>
+   <header class="layout-padding">
     <h1>
       <a href="#home">
         <img src="https://placehold.co/280x64" alt="서울마음치과입니다.">
@@ -23,9 +25,9 @@
       </ul>
     </nav>
     <div class="mui">
-      <button type="button" class="material-symbols-outlined">menu</button>
-      <div id="menuPanel" class="active">
-        <button type="button" class="material-symbols-outlined">close</button>
+      <button type="button" class="material-symbols-outlined" id="openButton">menu</button>
+      <div id="menuPanel" class="">
+        <button type="button" class="material-symbols-outlined" id="closeButton">close</button>
         <ul>
           <li><a href="#home">서울마음치과</a></li>
           <li><a href="#doctors">의료진소개</a></li>
@@ -36,8 +38,8 @@
       </div>
     </div>
    </header>
-   <section id="home">
-    <div>
+   <section id="home" class="layout-padding">
+    <div class="layout-max">
       <div>
         <h2>
           <mark>마음</mark>을 담은 진료,
@@ -70,7 +72,7 @@
       </ol>
     </div>
    </section>
-   <section>
+   <section class="">
     <div>
       <mark>SEOUL MAEUM DENTAL CLINIC</mark>
       <h2>

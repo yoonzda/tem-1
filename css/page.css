@@ -37,16 +37,50 @@ header #menuPanel:not(.active){
   display: none;
 }
 header #menuPanel{
-  background-color: tomato;
+  background-color: #FFF;
 
   width: 80%;
   height: 100dvh;
   position: fixed;
   right: 0; top: 0;
+
+  padding-inline: 4%;
+
+  text-align: right;
 }
+header #menuPanel button{
+  width: 40px;
+  height: 64px;
+  margin-block: 20px;
+}
+header #menuPanel ul{
+  list-style: none;
+  text-align: left;
+
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+
+  padding-block: 24px;
+}
+header #menuPanel ul li{font-family: 'Pretendard'; font-size: 24px; font-weight: 500; color: #333;}
 /* header end */
 
 /* section 01 start */
+#home{
+  background-color: tomato;
+
+  height: 100dvh;
+
+  display: flex;
+  align-items: center;
+}
+#home>div{
+  background-color: teal;
+  
+  width: 100%;
+}
+/* section 01 end */
 
 @media screen and (max-width: 767px){
   /* header start */
@@ -81,7 +115,6 @@ header #menuPanel{
   header{background-color: transparent;}
   header{
     padding-block: 28px;
-    padding-inline: 8%;
   }
   header h1{
     width: 20%;

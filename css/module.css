@@ -6,5 +6,6 @@
 
 }
 @media screen and (min-width: 1280px){
-  
+  .layout-padding{padding-inline: 8%;}
+  .layout-max{max-width: 1620px; margin: 0 auto;}
 }
