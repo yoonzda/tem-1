@@ -9,6 +9,7 @@ header{
   width: 100%;
   position: fixed;
   left: 0; top: 0;
+  z-index: 100;
   box-sizing: border-box;
 }
 header{
@@ -68,18 +69,63 @@ header #menuPanel ul li{font-family: 'Pretendard'; font-size: 24px; font-weight:
 
 /* section 01 start */
 #home{
-  background-color: tomato;
+  background-color: #1A1714;
 
   height: 100dvh;
+  min-height: 800px;
 
   display: flex;
   align-items: center;
 }
 #home>div{
-  background-color: teal;
-  
   width: 100%;
 }
+#home>div div{
+  padding-block: 6px 12px;
+  padding-inline: 40px;
+  border-left: 10px solid #FBA518;
+
+  margin-bottom: 80px;
+}
+#home>div div h2{font-family: 'Pretendard'; font-size: 64px; font-weight: 500; color: #FFF; line-height: 120%;}
+#home>div div h2{
+  margin-bottom: 60px;
+}
+#home>div div h2 mark{color: #FBA518; background-color: transparent;}
+#home>div div h2 span{
+  display: block;
+}
+#home>div div h2 b{font-weight: 700;}
+#home>div div p{font-family: 'Pretendard'; font-size: 24px; font-weight: 400; color: #FFF;}
+#home>div ol{
+  display: flex;
+}
+#home>div ol li{
+  position: relative;
+  padding-top: 60px;
+  padding-right: 72px;
+  
+  display: block;
+}
+#home>div ol li:not(:first-of-type){
+  margin-left: 70px;
+}
+#home>div ol li::before{
+  content: ''; display: block;
+  width: 48px; height: 48px; background-color: #D9D9D9;
+  position: absolute; left: 0; top: 0;
+}
+#home>div ol li:not(:last-of-type)::after{
+  content: ''; display: block;
+  width: 2px; height: 90%; background-color: #B1AEAA;
+  position: absolute; right: 0; top: 5%;
+}
+#home>div ol li h3{
+  margin-bottom: 16px;
+}
+#home>div ol li p span{display: block;}
+#home>div ol li h3{font-family: 'Pretendard'; font-size: 24px; font-weight: 600; color: #FFF;}
+#home>div ol li p{font-family: 'Pretendard'; font-size: 18px; font-weight: 400; color: #FFF; line-height: 140%;}
 /* section 01 end */
 
 @media screen and (max-width: 767px){
@@ -87,7 +133,6 @@ header #menuPanel ul li{font-family: 'Pretendard'; font-size: 24px; font-weight:
   header{background-color: tan;}
   header{
     padding-block: 16px;
-    padding-inline: 4%;
   }
   header h1{
     width: 50%;
@@ -101,7 +146,6 @@ header #menuPanel ul li{font-family: 'Pretendard'; font-size: 24px; font-weight:
   header{background-color: teal;}
   header{
     padding-block: 20px;
-    padding-inline: 4%;
   }
   header h1{
     width: 30%;
