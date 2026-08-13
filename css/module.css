@@ -1,3 +1,24 @@
+/* title box start */
+.titleBox{
+  padding-block: 80px;
+
+  text-align: center;
+}
+.titleBox mark{font-family: "Pretendard"; font-size: 20px; font-weight: 500; color: #E8DCC7; letter-spacing: 1px;}
+.titleBox mark{
+  display: block;
+
+  background-color: transparent;
+  
+  margin-bottom: 14px;
+}
+.titleBox h2{font-family: "Pretendard"; font-size: 48px; font-weight: 500; color: #333;}
+.titleBox h2{
+  margin-bottom: 20px;
+}
+.titleBox h2 b{font-weight: 600; color: #FBA518;}
+.titleBox p{font-family: "Pretendard"; font-size: 24px; font-weight: 400; color: #555;}
+/* title box end */
 
 @media screen and (max-width: 767px){
   .layout-padding{padding-inline: 4%;}
