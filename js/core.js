@@ -1,5 +1,12 @@
 $(document).ready(function(){
   panelControl();
+
+  $(".slideContent").slick({
+    arrows: true,
+
+    prevArrow: $('.prevButton'),
+    nextArrow: $('.nextButton')
+  });
 });
 
 function activeAdd(target, className){

@@ -12,12 +12,18 @@
   
   margin-bottom: 14px;
 }
-.titleBox h2{font-family: "Pretendard"; font-size: 48px; font-weight: 500; color: #333;}
+.titleBox h2{font-family: "Pretendard"; font-size: 48px; font-weight: 500;}
 .titleBox h2{
   margin-bottom: 20px;
 }
 .titleBox h2 b{font-weight: 600; color: #FBA518;}
-.titleBox p{font-family: "Pretendard"; font-size: 24px; font-weight: 400; color: #555;}
+.titleBox p{font-family: "Pretendard"; font-size: 24px; font-weight: 400;}
+
+.titleBox.color-black h2{color: #333;}
+.titleBox.color-black p{color: #555;}
+
+.titleBox.color-white h2{color: #FFF;}
+.titleBox.color-white p{color: #FFF;}
 /* title box end */
 
 @media screen and (max-width: 767px){
