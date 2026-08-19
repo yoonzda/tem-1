@@ -409,9 +409,38 @@ header #menuPanel ul li{font-family: 'Pretendard'; font-size: 24px; font-weight:
   border: none;
   padding: 0;
   cursor: pointer;
+
+  font-size: 40px;
+  color: #FFF;
+}
+#gallery .sliderButtons .prevButton{
+  background-color: #272727;
+}
+#gallery .sliderButtons .nextButton{
+  background-color: #FBA518;
 }
 /* section 06 end */
 
+/* section 07 start */
+#location{
+  display: flex;
+}
+#location>div{
+  flex: 1;
+}
+#location .leftContent{
+  background-color: tomato;
+}
+#location .rightContent{
+  background-color: teal;
+}
+/* section 07 end */
+
+/* footer start */
+footer{background-color: #1A1714;}
+
+
+/* footer end */
 
 @media screen and (max-width: 767px){
   /* header start */
