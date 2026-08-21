@@ -4,6 +4,9 @@
 
   text-align: center;
 }
+.titleBox.align-left{
+  margin-bottom: 40px;
+}
 .titleBox mark{font-family: "Pretendard"; font-size: 20px; font-weight: 500; color: #E8DCC7; letter-spacing: 1px;}
 .titleBox mark{
   display: block;
@@ -13,7 +16,7 @@
   margin-bottom: 14px;
 }
 .titleBox h2{font-family: "Pretendard"; font-size: 48px; font-weight: 500;}
-.titleBox h2{
+.titleBox.align-center h2{
   margin-bottom: 20px;
 }
 .titleBox h2 b{font-weight: 600; color: #FBA518;}
