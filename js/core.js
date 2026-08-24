@@ -1,12 +1,7 @@
 $(document).ready(function(){
   panelControl();
-
-  $(".slideContent").slick({
-    arrows: true,
-
-    prevArrow: $('.prevButton'),
-    nextArrow: $('.nextButton')
-  });
+  slickSlide();
+  headerStyle();
 });
 
 function activeAdd(target, className){
@@ -23,5 +18,20 @@ function panelControl(){
   });
   $("#closeButton").click(function(){
     activeRemove("#menuPanel", "active");
+  });
+}
+
+function slickSlide(){
+  $(".slideContent").slick({
+    arrows: true,
+
+    prevArrow: $('.prevButton'),
+    nextArrow: $('.nextButton')
+  });
+}
+
+function headerStyle(){
+  window.addEventListener('scroll', () => {
+    console.log(window.scrollY);
   });
 }
