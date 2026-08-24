@@ -433,6 +433,7 @@ header #menuPanel ul li{font-family: 'Pretendard'; font-size: 24px; font-weight:
   
   padding-block: 100px;
   padding-left: 8%;
+  padding-right: 4%;
   
 }
 #location .leftContent>p{font-family: "Pretendard"; font-size: 24px; font-weight: 600; color: #272727;}
@@ -520,14 +521,47 @@ header #menuPanel ul li{font-family: 'Pretendard'; font-size: 24px; font-weight:
 #location .leftContent .textInfo small{font-family: "Pretendard"; font-size: 12px; font-weight: 700; color: #747474; line-height: 120%;}
 
 #location .rightContent{
-  background-color: teal;
+  background-color: #D9D9D9;
   flex: 1;
 }
 /* section 07 end */
 
 /* footer start */
-footer{background-color: #1A1714;}
+footer{
+  background-color: #1A1714;
 
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  padding-block: 40px;
+}
+footer div span{font-family: "Pretendard"; font-size: 16px; font-weight: 700; color: #D5D5D5;}
+footer div span{
+  display: block;
+  margin-bottom: 8px;
+}
+footer ol{
+  display: flex;
+  gap: 12px;
+
+  list-style: none;
+
+  margin-bottom: 16px;
+}
+footer ol li p{font-family: "Pretendard"; font-size: 16px; font-weight: 700; color: #D5D5D5;}
+footer div>p{font-family: "Pretendard"; font-size: 16px; font-weight: 700; color: #D5D5D5;}
+footer button[type="button"]{font-family: "Pretendard"; font-size: 18px; font-weight: 500; color: #ADADAD;}
+footer button[type="button"]{
+  margin-left: auto;
+
+  width: 240px;
+  height: 50px;
+
+  border: 1px solid #7B7B7B;
+  background-color: transparent;
+  cursor: pointer;
+}
 
 /* footer end */
 
