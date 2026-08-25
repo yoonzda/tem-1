@@ -31,7 +31,15 @@ function slickSlide(){
 }
 
 function headerStyle(){
-  window.addEventListener('scroll', () => {
-    console.log(window.scrollY);
+  var headerScrollY = 0;
+  
+  window.addEventListener('scroll', function(){
+    headerScrollY = window.scrollY;
+
+    if(headerScrollY < 10){
+      activeRemove("header", "active");
+    }else{
+      activeAdd("header", "active");
+    }
   });
 }

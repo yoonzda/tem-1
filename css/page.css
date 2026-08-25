@@ -9,7 +9,10 @@ header{
   left: 0; top: 0;
   z-index: 100;
   box-sizing: border-box;
+
+  transition: background-color ease-out .3s;
 }
+header.active{background-color: #1A1714;}
 header{
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
@@ -67,7 +70,7 @@ header #menuPanel ul li{font-family: 'Pretendard'; font-size: 24px; font-weight:
 
 /* section 01 start */
 #home{
-  background-color: #1A1714;
+  background-color: #666;
 
   height: 100dvh;
   min-height: 800px;
