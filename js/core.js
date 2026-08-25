@@ -31,7 +31,13 @@ function slickSlide(){
 }
 
 function headerStyle(){
-  var headerScrollY = 0;
+  var headerScrollY = window.scrollY;
+
+  if(headerScrollY < 10){
+    activeRemove("header", "active");
+  }else{
+    activeAdd("header", "active");
+  }
   
   window.addEventListener('scroll', function(){
     headerScrollY = window.scrollY;
