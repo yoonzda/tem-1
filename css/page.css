@@ -521,6 +521,7 @@ header #menuPanel ul li{font-family: 'Pretendard'; font-size: 24px; font-weight:
   width: 120px;
 }
 #location .leftContent .textInfo small{font-family: "Pretendard"; font-size: 12px; font-weight: 700; color: #747474; line-height: 120%;}
+#location .leftContent .textInfo a{font-family: "Pretendard"; font-size: 36px; font-weight: 700; color: #EB650C;}
 
 #location .rightContent{
   background-color: #D9D9D9;
